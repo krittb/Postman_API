@@ -43,7 +43,7 @@ jobs:
       # Run collection
       - name: Run postman collection
         run: |
-          newman run ""
+          newman run "GroceryStoreAPI_OpenAPI_Spec.postman_collection.json" -r cli,htmlextra --reporter-htmlextra-export TestArtifact/report.html
 
       # Upload the reports to TestArtifacts directory
       - name: Publish Report

@@ -4,6 +4,9 @@ name: PostmanGitHub
 
 # Controls when the workflow will run
 on:
+   # Allows to schedule this workflow using cron
+  schedule: 
+    - cron: "*/5 * * * *"
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
